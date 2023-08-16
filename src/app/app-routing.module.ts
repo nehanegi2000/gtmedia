@@ -13,6 +13,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { ContentwritingComponent } from './services/contentwriting/contentwriting.component';
 const routes: Routes = [
+ 
+  {path:'', component:HomeComponent },
+  {path:'home', component:HomeComponent },
+  {path:'contact', component:ContactComponent },
+  {path:'FAQs', component:FaqsComponent },
   {path:'emailAndWhatsAppMarketing', component:EmailAndWhatsAppMarketingComponent },
   {path:'FacebookMarketing',component:FacebookMarketingComponent},
   {path:'InstagramAndYouTubeManagement',component:InstagramAndYouTubeManagementComponent},
@@ -21,14 +26,11 @@ const routes: Routes = [
   {path:'PromotedOnSocialMedia',component:PromotedOnSocialMediaComponent},
   {path:'WebsiteAndAppMarketing',component:WebsiteAndAppMarketingComponent},
   {path:'YouTubeMarketing',component:YouTubeMarketingComponent},
-  {path:'contact', component:ContactComponent },
-  {path:'FAQs', component:FaqsComponent },
-  {path:'home', component:HomeComponent },
   {path:'contentWriting', component:ContentwritingComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

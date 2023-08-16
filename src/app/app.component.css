@@ -1,13 +1,13 @@
 
 .nav-link
 {
-  color: #B270A2;
+  color: #EA738D;
 }
 
 
   p { color: #FFFFFF; } 
   .dropbtn {
-    background-color: #B270A2;
+    background-color: #EA738D;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -34,10 +34,15 @@
     text-decoration: none;
     display: block;
   }
+
   
-  .dropdown-content a:hover {background-color: #C689C6;}
+  .dropdown-content a:hover {background-color: #EA738D;}
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #C689C6;}
- 
+  .dropdown:hover .dropbtn {background-color: #EA738D;}
+
+  .company
+  {
+background-color: #89ABE3;
+  }
